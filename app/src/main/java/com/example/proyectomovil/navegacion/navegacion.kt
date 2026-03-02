@@ -5,11 +5,11 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.proyectomovil.Perfil
 import com.example.proyectomovil.pantallas.Crear
 import com.example.proyectomovil.pantallas.Home
 import com.example.proyectomovil.pantallas.Mapa
 import com.example.proyectomovil.pantallas.Mensajes
-import com.example.proyectomovil.pantallas.Perfil
 import com.example.proyectomovil.pantallas.pantallas
 
 
