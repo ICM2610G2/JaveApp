@@ -1,6 +1,7 @@
 package com.example.proyectomovil.pantallas
 
 enum class pantallas {
+    Signin,
 
     Login,
 

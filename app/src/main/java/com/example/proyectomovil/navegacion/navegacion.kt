@@ -10,6 +10,7 @@ import com.example.proyectomovil.pantallas.Crear
 import com.example.proyectomovil.pantallas.Home
 import com.example.proyectomovil.pantallas.Mapa
 import com.example.proyectomovil.pantallas.Mensajes
+import com.example.proyectomovil.pantallas.Signin
 import com.example.proyectomovil.pantallas.pantallas
 
 
@@ -21,6 +22,12 @@ fun Navegacion(){
         startDestination = pantallas.Home.name
     )
     {
+        composable(route = pantallas.Signin.name){
+            Signin(controladorNavegacion = controladorNavegacion)
+        }
+//        composable(route = pantallas.Login.name){
+//            Login(controladorNavegacion = controladorNavegacion)
+//        }
         composable(route = pantallas.Home.name){
             Home(controladorNavegacion = controladorNavegacion)
         }
