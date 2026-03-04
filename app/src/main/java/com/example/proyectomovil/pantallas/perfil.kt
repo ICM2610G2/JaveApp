@@ -37,6 +37,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
 import com.example.proyectomovil.componentes.BarraAbajo
 import com.example.proyectomovil.componentes.TopBar
+import com.example.proyectomovil.pantallas.pantallas
 import com.example.proyectomovil.ui.theme.barraArriba
 import com.example.proyectomovil.ui.theme.fondo
 
@@ -59,6 +60,13 @@ fun Perfil(modifier: Modifier = Modifier, controladorNavegacion: NavController) 
                     Text(
                         text = "YOKS (yoks@universidadXYZ.edu.co)", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = Color.White
                     )
+                    Button(onClick = {
+                        controladorNavegacion.navigate(route = pantallas.Login.name)
+                    }
+                    )
+                    {
+                        Text(text = "cerrar sesion")
+                    }
                 }
             }
 

@@ -1,6 +1,5 @@
 package com.example.proyectomovil.navegacion
 
-import androidx.compose.material.icons.filled.Home
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -8,6 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.proyectomovil.Perfil
 import com.example.proyectomovil.pantallas.Crear
 import com.example.proyectomovil.pantallas.Home
+import com.example.proyectomovil.pantallas.Login
 import com.example.proyectomovil.pantallas.Mapa
 import com.example.proyectomovil.pantallas.Mensajes
 import com.example.proyectomovil.pantallas.Signin
@@ -19,15 +19,15 @@ fun Navegacion(){
     val controladorNavegacion = rememberNavController()
     NavHost(
         navController = controladorNavegacion,
-        startDestination = pantallas.Home.name
+        startDestination = pantallas.Login.name
     )
     {
         composable(route = pantallas.Signin.name){
             Signin(controladorNavegacion = controladorNavegacion)
         }
-//        composable(route = pantallas.Login.name){
-//            Login(controladorNavegacion = controladorNavegacion)
-//        }
+        composable(route = pantallas.Login.name){
+            Login(controladorNavegacion = controladorNavegacion)
+        }
         composable(route = pantallas.Home.name){
             Home(controladorNavegacion = controladorNavegacion)
         }

@@ -24,11 +24,10 @@ import com.example.proyectomovil.ui.theme.barraAbajo
 @Composable
 fun BarraAbajo( controladorNavegacion : NavController){
     BottomAppBar(
-
         actions = {
             Row (
                 modifier = Modifier
-                    .background(barraAbajo)
+                    .background(color = barraAbajo)
                     .fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly,
                 verticalAlignment = Alignment.CenterVertically,

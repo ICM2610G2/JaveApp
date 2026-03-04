@@ -160,5 +160,4 @@ fun Login(modifier: Modifier = Modifier,
 @Preview (showBackground = true)
 fun prevLogin() {
     Login(controladorNavegacion = rememberNavController())
-
 }
